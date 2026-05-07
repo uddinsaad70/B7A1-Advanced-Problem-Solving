@@ -8,7 +8,7 @@ const filterEvenNumbers = (numbers: number[]): number[] => {
     }
     return evenNumbers;
 }
-// console.log(filterEvenNumbers([1,2,3,4,5,6]));
+
 
 // Problem - 2
 const reverseString = (str: string): string => {
@@ -27,7 +27,7 @@ const reverseString = (str: string): string => {
     }
     return chars.join('');
 }
-// console.log(reverseString("typescript"));
+
 
 // Problem - 3
 type StringOrNumber = string | number;
@@ -39,14 +39,12 @@ const checkType = (input: StringOrNumber) => {
         return "Number";
     }
 }
-// console.log(checkType(42));
 
 // Problem - 4
 const getProperty = <T>(obj: T, key: keyof T) => {
     return obj[key];
 }
-// const user = { id: 1, name: "John Doe", age: 21 };
-// console.log(getProperty(user,"age"));
+
 
 // Problem - 5
 interface Book {
@@ -61,8 +59,7 @@ const toggleReadStatus = (book: Book) => {
         isRead: true,
     };
 }
-// const myBook = { title: "TypeScript Guide", author: "Saad", publishedYear: 2001 };
-// console.log(toggleReadStatus(myBook));
+
 
 // Problem - 6
 class Person {
@@ -88,8 +85,6 @@ class Student extends Person {
     }
 }
 
-// const student = new Student("Alice", 20, "A");
-// console.log(student.getDetails());
 
 // Problem - 7
 const getIntersection = (arr1: number[], arr2: number[]): number[] => {
@@ -97,4 +92,3 @@ const getIntersection = (arr1: number[], arr2: number[]): number[] => {
 
     return arr1.filter(num => set.has(num));
 }
-// console.log(getIntersection([1,2,3,4], [3,4,5,6]));
